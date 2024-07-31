@@ -4,42 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hip-Hop Dance Moves</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Hip-Hop Dance Moves</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="hip-hop.html">Hip-Hop</a></li>
-                <li><a href="../salsa.html">Salsa</a></li>
-                <li><a href="../ballet.html">Ballet</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
-        <section class="dance-moves">
-            <h2>Learn Hip-Hop Moves</h2>
-            <div class="move">
-                <h3>Move 1: The Wave</h3>
-                <p>Description: A smooth, flowing movement mimicking a wave.</p>
-                <p>Cost: ₹10 <button onclick="purchaseMove('Wave')">Buy Now</button></p>
+        <section id="dance-moves">
+            <h2>Select a Dance Move</h2>
+            <div class="dance-move">
+                <p>Move 1</p>
+                <button onclick="purchaseMove('Move 1')">Learn for ₹10</button>
             </div>
-            <div class="move">
-                <h3>Move 2: The Robot</h3>
-                <p>Description: A robotic move with sharp, angular motions.</p>
-                <p>Cost: ₹10 <button onclick="purchaseMove('Robot')">Buy Now</button></p>
+            <div class="dance-move">
+                <p>Move 2</p>
+                <button onclick="purchaseMove('Move 2')">Learn for ₹10</button>
             </div>
-        </section>
-        <section class="free-learning">
-            <p>Want to learn for free? Download our app from the Play Store!</p>
-            <a href="https://play.google.com/store/apps/details?id=your-app-id" target="_blank">Download Here</a>
+            <!-- Add more dance moves as needed -->
         </section>
     </main>
-    <footer>
-        <p>© 2024 Dance Moves Teaching Website</p>
-    </footer>
-    <script src="../script.js"></script>
+    <script>
+        function purchaseMove(move) {
+            alert(`You have selected to learn ${move} for ₹10.`);
+            // Implement payment gateway integration here
+        }
+    </script>
 </body>
 </html>
+<section id="free-learning">
+    <h2>Learn for Free</h2>
+    <p>Download our app from the Play Store to learn dance moves for free!</p>
+    <a href="https://play.google.com/store" target="https://play.google.com/store/apps/details?id=com.github.android">
+        <img src="playstore.png" alt="Download from Play Store">
+    </a>
+</section>
