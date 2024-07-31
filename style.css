@@ -1,82 +1,53 @@
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0;
     color: #333;
 }
 
 header {
     background-color: #4CAF50;
     color: white;
-    padding: 1em 0;
     text-align: center;
+    padding: 1em 0;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+main {
+    padding: 2em;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.dance-categories, .dance-moves {
+#dance-styles, #dance-moves {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 20px;
 }
 
-.category, .move {
+.dance-style, .dance-move {
+    background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 10px;
-    width: 200px;
+    padding: 1em;
+    margin: 1em;
     text-align: center;
-    margin: 10px;
+    cursor: pointer;
 }
 
-.category img, .move img {
-    max-width: 100%;
+.dance-style img {
+    max-width: 100px;
     height: auto;
-    border-radius: 8px;
-}
-
-footer {
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    border-radius: 50%;
 }
 
 button {
     background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1em;
+    padding: 0.5em 1em;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 button:hover {
     background-color: #45a049;
-}
-
-.free-learning {
-    text-align: center;
-    margin-top: 20px;
 }
