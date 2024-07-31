@@ -3,41 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dance Moves Teaching Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Dance Moves</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Dance Moves Website</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="dance-styles/hip-hop.html">Hip-Hop</a></li>
-                <li><a href="dance-styles/salsa.html">Salsa</a></li>
-                <li><a href="dance-styles/ballet.html">Ballet</a></li>
-            </ul>
-        </nav>
+        <h1>Learn Dance Moves</h1>
     </header>
     <main>
-        <section class="dance-categories">
+        <section id="dance-styles">
             <h2>Select a Dance Style</h2>
-            <div class="category">
-                <img src="images/hip-hop.jpg" alt="Hip-Hop">
-                <a href="dance-styles/hip-hop.html">Hip-Hop</a>
+            <div class="dance-style" onclick="window.location.href='hiphop.html'">
+                <img src="hiphop.jpg" alt="Hip-Hop">
+                <p>Hip-Hop</p>
             </div>
-            <div class="category">
-                <img src="images/salsa.jpg" alt="Salsa">
-                <a href="dance-styles/salsa.html">Salsa</a>
+            <div class="dance-style" onclick="window.location.href='salsa.html'">
+                <img src="salsa.jpg" alt="Salsa">
+                <p>Salsa</p>
             </div>
-            <div class="category">
-                <img src="images/ballet.jpg" alt="Ballet">
-                <a href="dance-styles/ballet.html">Ballet</a>
+            <div class="dance-style" onclick="window.location.href='ballet.html'">
+                <img src="ballet.jpg" alt="Ballet">
+                <p>Ballet</p>
             </div>
         </section>
+        <section id="free-learning">
+            <h2>Learn for Free</h2>
+            <p>Download our app from the Play Store to learn dance moves for free!</p>
+            <a href="https://play.google.com/store" target="_blank">
+                <img src="playstore.png" alt="Download from Play Store">
+            </a>
+        </section>
     </main>
-    <footer>
-        <p>© 2024 Dance Moves Teaching Website</p>
-    </footer>
-    <script src="script.js"></script>
 </body>
 </html>
